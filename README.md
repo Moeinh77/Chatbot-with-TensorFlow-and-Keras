@@ -25,10 +25,13 @@ The model is a 2 layer RNN with GRU as cells. The encoder is Bi-directional with
 
 ### Tips for training the model:
 
+* I used small batch size of 32 for more stable training.
 * Instead of feeding a whole sequence to the network, I have fed time step x of a batch of data to the network.
 * I used bidirectional GRU as the encoder, but decoder is unidirectional. It is due to the fact that input is known but output is generated at each step.
 * I used Masked Loss. The loss for the padding inputs are considered 0.
 
 ### Setup:
+
+* I trained the model on a Nvidia 1070-Ti GPU. Each epoch took about 4.5 mins
 
 ### Related links:
