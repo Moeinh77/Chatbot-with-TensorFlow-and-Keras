@@ -6,16 +6,20 @@
 * Q: Who are you ?  A: i am the one that is all 
 * Q: What are you doing ?  A: i am not listening you are going to report to the lab 
 * Q: What are you doing ?  A: i steel
+* Q: Do you want to go out ?  A: i am sorry niece 
+### Dataset:  
 
-### Dataset:                       
  Cornell Movie Dialogs corpus contains a large metadata-rich collection of fictional conversations extracted from raw movie scripts.
  The corpus includes:
 - 220,579 conversational exchanges between 10,292 pairs of movie characters
 - involves 9,035 characters from 617 movies
 - in total 304,713 utterances
 
+I have used only 96048 pairs of these dialogs.
+
 ### Model:
 
+The model is a 2 layer RNN with GRU as cells. The encoder is Bi-directional with 256 units and decoder is Uni-directional 512 units. Glove vectors with 100 dimensions is used az word embeddings. 
 
 ### Results:
 
