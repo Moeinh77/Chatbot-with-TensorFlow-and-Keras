@@ -7,6 +7,10 @@
 * Q: What are you doing ?  A: i am not listening you are going to report to the lab 
 * Q: What are you doing ?  A: i steel
 * Q: Do you want to go out ?  A: i am sorry niece 
+* Q: Do you want ice ?  A: i am not a witch 
+* Q: Let go ?  A: suit yourself  
+* Q: i am sorry ?  A: you are not
+ 
 ### Dataset:  
 
  Cornell Movie Dialogs corpus contains a large metadata-rich collection of fictional conversations extracted from raw movie scripts.
