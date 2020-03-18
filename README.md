@@ -5,8 +5,6 @@
 * Q: Hello ?  A: hi tommy 
 * Q: Who are you ?  A: i am the one that is all 
 * Q: What are you doing ?  A: i am not listening you are going to report to the lab 
-* Q: Hello ?  A: goodnight bones
-* Q: Who are you ?  A: i am the only one 
 * Q: What are you doing ?  A: i steel
 
 ### Dataset:                       
