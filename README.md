@@ -37,6 +37,6 @@ The encoder is 1-layer Bi-directional GRU with 256 units and decoder is 2-layer 
 
 ### Setup:
 
-* I trained the model on a Nvidia 1070-Ti GPU. Each epoch took about 4.5 mins
+* I trained the model on a Nvidia 1070-Ti GPU. Each epoch took about 3.5 mins
 
 ### Related links:
