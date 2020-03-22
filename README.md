@@ -33,7 +33,7 @@ You can observe how the model decided to generate the output based on the input.
 
 ### Setup:
 
-* I trained the model on a Nvidia 1070-Ti GPU. Each epoch took about 3.5 mins
+* I trained the model on a Nvidia 1070-Ti GPU. Each epoch took about 4 minutes. The model is trained for 300 epochs, but I used the 120th epoch for inference.
 
 ### Helpful tutorials:
 
