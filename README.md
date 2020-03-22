@@ -23,11 +23,13 @@ You can observe how the model decided to generate the output based on the input.
 ### Tips for training the model:
 
 * I used small batch size of 32 for more stable training.
-* Instead of feeding a whole sequence to the network, I have fed time step x of a batch of data to the network.
 * I used bidirectional GRU as the encoder, but decoder is unidirectional. It is due to the fact that input is known but output is generated at each step.
 * I used Masked Loss. The loss for the padding inputs are considered 0.
 * It is more desirable to use a low dimenstion word embeddings with a simple model. I used 50-d GloVe word vectors.
 * I applied dropout with a chance of 0.2 to encoder's input word embeddings .
+* Instead of feeding a whole sequence to the network, I have fed time step x of a batch of data to the network, as depicted below:
+
+![](pictures/seq2seq_batches.png)
 
 ### Setup:
 
