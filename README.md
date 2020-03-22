@@ -33,7 +33,7 @@ The encoder is 1-layer Bi-directional GRU with 256 units and decoder is 2-layer 
 * Instead of feeding a whole sequence to the network, I have fed time step x of a batch of data to the network.
 * I used bidirectional GRU as the encoder, but decoder is unidirectional. It is due to the fact that input is known but output is generated at each step.
 * I used Masked Loss. The loss for the padding inputs are considered 0.
-* Using a simpler model with a low dimenstion word embeddings turned out to be more effective. I used just one layer for encoder and 50-d GloVe word vectors.
+* It is more desirable to use a low dimenstion word embeddings with a simple model. I used 50-d GloVe word vectors.
 * I applied dropout with a chance of 0.2 to encoder's input word embeddings .
 
 ### Setup:
