@@ -16,7 +16,9 @@ The encoder is 1-layer Bi-directional GRU with 256 units and decoder is 2-layer 
 
 ### Results:
 
-!()[pictures/attention_output.png]
+You can observe how the model decided to generate the output based on the input. For each pair of words from input and output the attention weight is visualized.
+
+![](pictures/attention_output.png)
 
 ### Tips for training the model:
 
