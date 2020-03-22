@@ -29,7 +29,7 @@ You can observe how the model decided to generate the output based on the input.
 * I applied dropout with a chance of 0.2 to encoder's input word embeddings .
 * Instead of feeding a whole sequence to the network, I have fed time step x of a batch of data to the network, as depicted below:
 
-![](pictures/seq2seq_batches.png)
+![picture is from pytorch chatbot toturial](pictures/seq2seq_batches.png)
 
 ### Setup:
 
