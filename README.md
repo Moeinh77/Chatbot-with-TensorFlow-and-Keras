@@ -14,6 +14,8 @@ I have used only 96048 pairs of these dialogs.
 
 The encoder is 1-layer Bi-directional GRU with 256 units and decoder is 2-layer Uni-directional GRU with 512 units. I utilized Bahdanau Attention as my attention model.
 
+![](pictures/encoder_decoder.png)
+
 ### Results:
 
 You can observe how the model decided to generate the output based on the input. For each pair of words from input and output the attention weight is visualized.
