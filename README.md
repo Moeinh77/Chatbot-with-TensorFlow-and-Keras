@@ -10,6 +10,25 @@
 
 I have used only 96048 pairs of these dialogs.
 
+A conversation example from the dataset:
+
+```
+Can we make this quick?  Roxanne Korrine and Andrew Barrett are having an incredibly horrendous public break- up on the quad.  Again.
+Well, I thought we'd start with pronunciation, if that's okay with you.
+
+Well, I thought we'd start with pronunciation, if that's okay with you.
+Not the hacking and gagging and spitting part.  Please.
+
+Not the hacking and gagging and spitting part.  Please.
+Okay... then how 'bout we try out some French cuisine.  Saturday?  Night?
+
+You're asking me out.  That's so cute. What's your name again?
+Forget it.
+
+No, no, it's my fault -- we didn't have a proper introduction ---
+Cameron.
+```
+
 ### Model:
 
 The encoder is 1-layer Bi-directional GRU with 256 units and decoder is 2-layer Uni-directional GRU with 512 units. I utilized Bahdanau Attention as my attention model.
