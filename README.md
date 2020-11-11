@@ -31,7 +31,7 @@ Cameron.
 
 ### Model:
 
-The encoder is 1-layer Bi-directional GRU with 256 units and decoder is 2-layer Uni-directional GRU with 512 units. I utilized Bahdanau Attention as my attention model.
+I utilized Encoder-Decoder architecture for the task. The encoder is a 1-layer Bi-directional GRU with 256 units and the decoder is a 2-layer Uni-directional GRU with 512 units. I adopted Bahdanau Attention mechanism as my attention model.
 
 ![](pictures/encoder_decoder.png)
 
@@ -46,15 +46,15 @@ You can observe how the model decided to generate the output based on the input.
 * I used small batch size of 32 for more stable training.
 * I used bidirectional GRU as the encoder, but decoder is unidirectional. It is due to the fact that input is known but output is generated at each step.
 * I used Masked Loss. The loss for the padding inputs are considered 0.
-* It is more desirable to use a low dimenstion word embeddings with a simple model. I used 50-d GloVe word vectors.
-* I applied dropout with a chance of 0.2 to encoder's input word embeddings .
+* With a simple model like the one I have used, It is more desirable to use a low dimension word Embeddings. I used 50-d GloVe word vectors.
+* I applied dropout with a chance of 0.2 to encoder's input word embeddings.
 * Instead of feeding a whole sequence to the network, I have fed time step x of a batch of data to the network, as depicted below:
 
 ![picture is from pytorch chatbot toturial](pictures/seq2seq_batches.png)
 
 ### Setup:
 
-* I trained the model on a Nvidia 1070-Ti GPU. Each epoch took about 4 minutes. The model is trained for 300 epochs, but I used the 120th epoch for inference.
+* I trained the model on a Nvidia 1070-Ti GPU. Each epoch took about 4 minutes. I used the 120th epoch for the inference.
 
 ### Helpful tutorials:
 
